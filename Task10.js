@@ -4,7 +4,7 @@ function printCommonCharacters(word1, word2) {
     let commonCharacters = [];
     for(let i = 0; i < word1Letters.length; i++) {
         if(word2Letters.includes(word1Letters[i]) && commonCharacters.includes(word1Letters[i])) {
-            //null
+            //pass
         } else if(word2Letters.includes(word1Letters[i])) {
             commonCharacters.push(word1Letters[i]);
         }
