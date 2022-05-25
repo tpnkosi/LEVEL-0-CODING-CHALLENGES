@@ -1,6 +1,6 @@
 function printVowels(word) {
 
-    let letters = word.split("");
+    const letters = word.split("");
     let foundVowels = [];
     for(let i = 0; i < letters.length; i ++) {
         switch((letters[i]).toLowerCase()) {
@@ -17,7 +17,7 @@ function printVowels(word) {
                 }
         }
     }
-    return "Vowels: " + foundVowels;
+    return `Vowels: ${foundVowels}`;
 }
 
 console.log(printVowels("umuzi"));
