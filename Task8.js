@@ -13,7 +13,7 @@ function convertToHoursAndMinutes(minutes) {
 
     const min = minutes % 60;
     let stringMinutes;
-    switch(minutes) {
+    switch(min) {
         case 1:
             stringMinutes = "minute";
             break;
