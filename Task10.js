@@ -3,14 +3,14 @@ function printCommonCharacters(word1, word2) {
     const word1Letters = word1.toLowerCase().split("");
     const word2Letters = word2.toLowerCase().split("");
     let commonCharacters = [];
-    for(let i = 0; i < word1Letters.length; i++) {
-        if(word2Letters.includes(word1Letters[i]) && commonCharacters.includes(word1Letters[i])) {
+    for(let i = 0; i < word2Letters.length; i++) {
+        if(word1Letters.includes(word2Letters[i]) && commonCharacters.includes(word2Letters[i])) {
             //pass
-        } else if(word2Letters.includes(word1Letters[i])) {
-            commonCharacters.push(word1Letters[i]);
+        } else if(word1Letters.includes(word2Letters[i])) {
+            commonCharacters.push(word2Letters[i]);
         }
     }
-    return `Common letters: ${commonCharacters}`;
+    console.log(`Common letters: ${commonCharacters.join(", ")}`);
 }
 
-console.log(printCommonCharacters("house","computers"));
+printCommonCharacters("house","computers");
