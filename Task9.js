@@ -17,7 +17,7 @@ function printVowels(word) {
                 }
         }
     }
-    return `Vowels: ${foundVowels}`;
+    console.log(`Vowels: ${foundVowels.join(", ")}`);
 }
 
-console.log(printVowels("umuzi"));
+printVowels("umuzi");
