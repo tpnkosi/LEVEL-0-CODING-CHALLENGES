@@ -9,10 +9,10 @@ function printVowels(word) {
             case "i":
             case "o":
             case "u":
-                if(foundVowels.includes(letters[i])) {
+                if(foundVowels.includes(letters[i].toLowerCase())) {
                     break;
                 } else {
-                    foundVowels.push(letters[i]);
+                    foundVowels.push(letters[i].toLowerCase());
                     break;
                 }
         }
@@ -20,4 +20,4 @@ function printVowels(word) {
     console.log(`Vowels: ${foundVowels.join(", ")}`);
 }
 
-printVowels("umuzi");
+printVowels("Umuzi");
